@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "dependencies": {
+    "caniuse-lite": "^1.0.30001612",
+    "jshint": "^2.13.6"
+  },
+  "scripts": {
+    "build": "tailwindcss -i src/css/input.css -o src/css/style.css --watch"
+  }
+}

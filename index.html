@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <title>mDesk - most powerfull system for help-desk</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="bg-sky-50 text-zinc-600">
+    <div class="wrapper flex flex-col max-w-6xl mx-auto h-screen">
+      <header
+        class="header flex flex-row justify-between items-center pt-1 pb-1"
+      >
+        <div class="logo text-4xl cursor-pointer">mDesk</div>
+        <div class="top-nav">
+          <ul class="flex items-center gap-4 text-xl font-light">
+            <li class="text-sky-600 cursor-pointer transition-colors hover:text-sky-600" id="active">Dashboard</li>
+            <li class="text-zinc-500 cursor-pointer transition-colors hover:text-sky-600">My tickets</li>
+            <li class="text-zinc-500 cursor-pointer transition-colors hover:text-sky-600">Reports</li>
+            <li class="text-zinc-500 cursor-pointer transition-colors hover:text-sky-600">Ratings</li>
+            <li class="text-zinc-500 cursor-pointer transition-colors hover:text-sky-600">Projects</li>
+            <li class="text-zinc-500 cursor-pointer transition-colors hover:text-sky-600">Settings</li>
+            <li class="text-zinc-400">|</li>
+            <li class="">
+              <a
+                href="#"
+                class="text-zinc-500 transition-colors ease-in-out hover:text-sky-600"
+                >Shop</a
+              >
+            </li>
+            <li class="">
+              <a
+                href="#"
+                class="text-zinc-500 transition-colors ease-in-out hover:text-sky-600"
+                >Help</a
+              >
+            </li>
+            <li class="pl-8 relative">
+              <a href="#" class="flex flex-col items-center">
+                <div
+                  class="avatar h-14 w-14 border rounded-full flex justify-center items-center shadow-md"
+                >
+                  <img
+                    class="rounded-full"
+                    src="./src/img/avatar.png"
+                    alt="user_avatar"
+                  />
+                </div>
+                <div
+                  class="name text-xs text-zinc-600 bg-slate-100 rounded-lg absolute bottom-1 shadow-md px-2 border transition-shadow ease-in-out hover:shadow-lg"
+                >
+                  Stanislav
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main class="main flex-auto border">MAIN</main>
+      <footer class="footer text-zinc-300 text-center cursor-pointer">
+        created by magna_mentes &copy 2024
+      </footer>
+    </div>
+  </body>
 </html>
