@@ -25,8 +25,8 @@
               class="text-sky-600 cursor-pointer transition-colors flex items-center gap-0.5 hover:text-sky-600"
               id="active"
             >
-              <span class="material-symbols-outlined"> dashboard </span
-              >Dashboard
+              <span class="material-symbols-outlined"> dashboard </span>
+              <p class="flex xl:flex lg:flex md:hidden">Dashboard</p>
             </li>
             <li
               class="text-zinc-500 cursor-pointer transition-colors flex items-center gap-0.5 hover:text-sky-600"
@@ -135,11 +135,38 @@
             </span>
           </div>
         </div>
-        <div class="mid_deck mt-5 flex flex-auto">
+        <div class="mid_deck mt-5 mb-2 flex justify-between gap-5 flex-auto">
+          <div
+            class="recently_added w-1/2 flex flex-col relative shadow shadow-sky-300 border rounded-md"
+          >
+            <p
+              class="absolute -top-3 left-4 bg-slate-100 text-zinc-500 shadow-md shadow-sky-300 rounded-lg px-2"
+            >
+              Recently added
+            </p>
+            <span
+              class="material-symbols-outlined absolute bottom-1 right-1 text-sky-300"
+            >
+              schedule
+            </span>
+          </div>
+          <div
+            class="recently_added w-1/2 flex flex-col relative shadow border rounded-md"
+          >
+            <p
+              class="absolute -top-3 left-4 bg-slate-100 text-zinc-500 shadow-md rounded-lg px-2"
+            >
+              Last news
+            </p>
+            <span
+              class="material-symbols-outlined absolute bottom-1 right-1 text-slate-300"
+            >
+              feed
+            </span>
+          </div>
         </div>
-        <div class="bottom_deck mt-5 border flex"></div>
       </main>
-      <footer class="footer text-zinc-300 text-center cursor-pointer">
+      <footer class="footer pb-2 text-zinc-300 text-center cursor-pointer">
         created by magna_mentes &copy 2024
       </footer>
     </div>
