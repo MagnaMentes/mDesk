@@ -135,9 +135,9 @@
             </span>
           </div>
         </div>
-        <div class="mid_deck mt-5 mb-2 flex justify-between gap-5 flex-auto">
+        <div class="mid_deck mt-3 mb-2 flex gap-5 flex-auto overflow-hidden">
           <div
-            class="recently_added w-1/2 flex flex-col relative shadow shadow-sky-300 border rounded-md"
+            class="recently_added w-1/2 mt-2 mb-1 flex flex-col relative shadow shadow-sky-300 border rounded-md"
           >
             <p
               class="absolute -top-3 left-4 bg-slate-100 text-zinc-500 shadow-md shadow-sky-300 rounded-lg px-2"
@@ -149,9 +149,50 @@
             >
               schedule
             </span>
+            <div
+              class="last_tasks flex flex-col mx-3 mt-6 mb-6 overflow-scroll"
+            >
+              <div
+                id="last_task" class="last_task flex flex-col p-2 border rounded-md shadow shadow-sky-300 my-1 mx-1 cursor-pointer transition-shadow duration-300 ease-in-out hover:shadow-sky-500"
+              >
+                <div
+                  class="last_task_short_info flex justify-between items-center"
+                >
+                  <p class="last_task_caption font-medium">
+                    Prepare a laptop for a new HRD
+                  </p>
+                  <p class="text-xs flex items-center gap-1">
+                    Expires: <span class="expires_date">28.04.24</span
+                    ><span
+                      class="important material-symbols-outlined text-amber-400"
+                    >
+                      warning
+                    </span>
+                  </p>
+                </div>
+                <div id="full_description" class="last_task_full_info flex flex-col hidden">
+                  <div
+                    class="full_description mt-2 p-2 rounded-md shadow-sm shadow-sky-300 bg-white font-light"
+                  >
+                    Prepare a laptop for a new HRD and setup all needed
+                    software. It's most important task! After that also need to
+                    create the new account.
+                  </div>
+                  <div
+                    class="author_performer_status flex justify-between items-center mt-2 text-sm"
+                  >
+                    <p class="">
+                      Author: <span class="">Stanislav Tolokolnikov</span>
+                    </p>
+                    <p class="">Performer: <span class="">Alex Ivanov</span></p>
+                    <p class="text-orange-600">Pending</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div
-            class="recently_added w-1/2 flex flex-col relative shadow border rounded-md"
+            class="last-news w-1/2 mt-2 mb-1 flex flex-col relative shadow shadow-zinc-300 border rounded-md"
           >
             <p
               class="absolute -top-3 left-4 bg-slate-100 text-zinc-500 shadow-md rounded-lg px-2"
@@ -169,6 +210,7 @@
       <footer class="footer pb-2 text-zinc-300 text-center cursor-pointer">
         created by magna_mentes &copy 2024
       </footer>
+      <script src="src/js/main.js"></script>
     </div>
   </body>
 </html>
