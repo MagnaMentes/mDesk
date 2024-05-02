@@ -93,83 +93,94 @@
       <main class="main flex flex-col flex-auto pt-5 pl-5 pr-5 overflow-hidden">
         <div class="top_deck flex justify-between gap-5">
           <div
-            class="main_info w-1/3 flex flex-col gap-1 relative h-32 shadow shadow-green-300 border border-sky-100 rounded-md"
+            class="main_info w-1/3 flex flex-col gap-2 h-32 relative shadow shadow-green-300 border border-sky-100 rounded-md"
           >
             <p
-              class="absolute -top-3 left-4 bg-slate-100 text-green-500 shadow-md shadow-green-300 rounded-lg px-2"
+              class="absolute -top-3 left-4 flex items-center gap-1 bg-slate-100 text-green-500 shadow-md shadow-green-300 rounded-lg px-2"
             >
-              Main info
+              <span class="material-symbols-outlined text-green-500">
+                info </span
+              >Main info
             </p>
             <span
-              class="material-symbols-outlined absolute bottom-1 right-1 text-green-300"
+              class="absolute -top-2 right-4 bg-slate-100 border rounded-full px-2 shadow-md shadow-green-300 text-xs text-green-500"
+              >Performance: <span>79%</span></span
             >
-              info
-            </span>
-            <div class="in_work flex justify-between px-4 pt-5">
-                <p class="">Tasks in the works:</p>
-                <span>1897</span>
+            <div
+              class="in_work flex justify-between mx-4 mt-5 border rounded-md px-2 shadow-md shadow-green-300"
+            >
+              <p class="">Tasks in the works:</p>
+              <span class="">1897</span>
             </div>
-            <div class="executed flex justify-between px-4">
-                <p class="">Executed:</p>
-                <span>1700</span>
+            <div
+              class="executed flex justify-between mx-4 border rounded-md px-2 shadow-md shadow-green-300"
+            >
+              <p class="">Executed:</p>
+              <span class="">1700</span>
             </div>
-            <div class="expired flex justify-between px-4">
-                <p class="">Expired:</p>
-                <span>197</span>
+            <div
+              class="expired flex justify-between mx-4 border rounded-md px-2 shadow-md shadow-green-300"
+            >
+              <p class="">Expired:</p>
+              <span class="">197</span>
             </div>
           </div>
           <div
-            class="tickets-queue w-1/3 flex flex-col gap-1 relative h-32 shadow shadow-indigo-300 border border-sky-100 rounded-md"
+            class="tickets-queue w-1/3 flex flex-col gap-2 relative shadow shadow-indigo-300 border border-sky-100 rounded-md"
           >
             <p
-              class="absolute -top-3 left-4 bg-slate-100 text-indigo-500 shadow-md shadow-indigo-300 rounded-lg px-2"
+              class="absolute -top-3 left-4 flex gap-1 bg-slate-100 text-indigo-500 shadow-md shadow-indigo-300 rounded-lg px-2"
             >
-              Tickets queue
+              <span class="material-symbols-outlined text-indigo-500">
+                stacks </span
+              >Tickets queue
             </p>
             <span
-              class="material-symbols-outlined absolute bottom-1 right-1 text-indigo-300"
+              id="num_of_queue"
+              class="absolute -top-2 right-4 text-indigo-500 border rounded-full px-2 text-xs bg-slate-100 shadow-md shadow-indigo-300"
+              >1191</span
             >
-              stacks
-            </span>
-            <span id="num_of_queue" class="absolute -top-3 right-4 text-indigo-500 border rounded-full px-2 bg-slate-100 shadow-md shadow-indigo-300">1191</span>
-            <div class="critical flex justify-between px-4 pt-5">
-                <p class="">Critical:</p>
-                <span>120</span>
+            <div class="critical flex justify-between mx-4 mt-5 border rounded-md px-2 shadow-md shadow-indigo-300">
+              <p class="">Critical:</p>
+              <span>120</span>
             </div>
-            <div class="critical flex justify-between px-4">
-                <p class="">Urgent:</p>
-                <span>368</span>
+            <div class="critical flex justify-between mx-4 border rounded-md px-2 shadow-md shadow-indigo-300">
+              <p class="">Urgent:</p>
+              <span>368</span>
             </div>
-            <div class="critical flex justify-between px-4">
-                <p class="">Important:</p>
-                <span>703</span>
+            <div class="critical flex justify-between mx-4 border rounded-md px-2 shadow-md shadow-indigo-300">
+              <p class="">Important:</p>
+              <span>703</span>
             </div>
           </div>
           <div
-            class="expiring_tickets w-1/3 flex flex-col gap-1 relative h-32 shadow shadow-red-300 border border-sky-100 rounded-md"
+            class="expiring_tickets w-1/3 flex flex-col gap-2 relative shadow shadow-red-300 border border-sky-100 rounded-md"
           >
             <p
-              class="absolute -top-3 left-4 bg-slate-100 text-red-500 shadow-md shadow-red-300 rounded-lg px-2"
+              class="absolute -top-3 left-4 flex gap-1 bg-slate-100 text-red-500 shadow-md shadow-red-300 rounded-lg px-2"
             >
-              Expiring tickets
+              <span
+                class="material-symbols-outlined text-red-500"
+              >
+                local_fire_department </span
+              >Expiring tickets
             </p>
             <span
-              class="material-symbols-outlined absolute bottom-1 right-1 text-red-300"
+              id="num_of_expired"
+              class="absolute -top-2 right-4 border rounded-full text-xs bg-slate-100 px-2 text-red-500 shadow-md shadow-red-300"
+              >415</span
             >
-              local_fire_department
-            </span>
-            <span id="num_of_expired" class="absolute -top-3 right-4 border rounded-full bg-slate-100 px-2 text-red-500 shadow-md shadow-red-300">415</span>
-            <div class="expired flex justify-between px-4 pt-5">
-                <p class="">Expired:</p>
-                <span>197</span>
+            <div class="expired flex justify-between mx-4 mt-5 border rounded-md px-2 shadow-md shadow-red-300">
+              <p class="">Expired:</p>
+              <span>197</span>
             </div>
-            <div class="overdue flex justify-between px-4">
-                <p class="">Overdue:</p>
-                <span>218</span>
+            <div class="overdue flex justify-between mx-4 border rounded-md px-2 shadow-md shadow-red-300">
+              <p class="">Overdue:</p>
+              <span>218</span>
             </div>
-            <div class="impact flex justify-between px-4">
-                <p class="">Impact:</p>
-                <span>18%</span>
+            <div class="impact flex justify-between mx-4 border rounded-md px-2 shadow-md shadow-red-300">
+              <p class="">Impact:</p>
+              <span>18%</span>
             </div>
           </div>
         </div>
@@ -191,7 +202,8 @@
               class="last_tasks flex flex-col mx-3 mt-6 mb-6 overflow-scroll"
             >
               <div
-                id="last_task" class="last_task flex flex-col p-2 border rounded-md shadow shadow-sky-300 my-1 mx-1 cursor-pointer transition-shadow duration-300 ease-in-out hover:shadow-sky-500"
+                id="last_task"
+                class="last_task flex flex-col p-2 border rounded-md shadow shadow-sky-300 my-1 mx-1 cursor-pointer transition-shadow duration-300 ease-in-out hover:shadow-sky-500"
               >
                 <div
                   class="last_task_short_info flex justify-between items-center"
@@ -208,7 +220,10 @@
                     </span>
                   </p>
                 </div>
-                <div id="full_description" class="last_task_full_info flex flex-col hidden">
+                <div
+                  id="full_description"
+                  class="last_task_full_info flex flex-col hidden"
+                >
                   <div
                     class="full_description mt-2 p-2 rounded-md shadow-sm shadow-sky-300 bg-white font-light"
                   >
